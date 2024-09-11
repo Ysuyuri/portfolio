@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 import me from "../../img/me.png";
 
+import { Link as Scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -14,13 +15,39 @@ function Navbar() {
       </Link>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <Link to="/">Início</Link>
+          <Link to="/" smooth={true} duration={500}>
+            Início
+          </Link>
         </li>
         <li className={styles.item}>
-          <Link to="/">Projetos</Link>
+          <Scroll
+            to="aboutMe"
+            smooth={true}
+            duration={500}
+            className={styles.scroll}
+          >
+            Sobre mim
+          </Scroll>
         </li>
         <li className={styles.item}>
-          <Link to="/">Contato</Link>
+          <Scroll
+            to="Project"
+            smooth={true}
+            duration={500}
+            className={styles.scroll}
+          >
+            Projetos
+          </Scroll>
+        </li>
+        <li className={styles.item}>
+          <Scroll
+            to="aboutMe"
+            smooth={true}
+            duration={500}
+            className={styles.scroll}
+          >
+            Contato
+          </Scroll>
         </li>
         <li className={styles.item}>
           <Link to="https://github.com/Ysuyuri">{<FaGithub size={44} />}</Link>
