@@ -1,6 +1,7 @@
 import styles from "./Home.module.css";
 import me from "../../img/me.png";
 import background from "../../img/background.png";
+import icon from "../../img/code_icon.png";
 
 function Home() {
   return (
@@ -12,7 +13,6 @@ function Home() {
           backgroundImage: `url(${background})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       >
         <div className={styles.section}>
@@ -33,7 +33,35 @@ function Home() {
         </div>
       </section>
       <section id="aboutMe" className={styles.content_color2}>
-        <h1>about me</h1>
+        <div className={styles.title}>
+          <h1>SOBRE MIM</h1>
+        </div>
+        <div className={styles.section_2}>
+          <div className={styles.aboutMe}>
+            <h1>RESUMO PROFISSIONAL</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <h1>FOCO PROFISSIONAL</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <h1>CONTATO</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+          </div>
+          <img src={icon} alt="Icon" className={styles.icon} />
+        </div>
       </section>
       <section id="Project" className={styles.content}>
         <h1>project</h1>

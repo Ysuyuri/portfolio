@@ -13,14 +13,15 @@
     text-align: right;
 }
 
-.section span{
-color: #FF3D00;
+.section_2 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2em;
+    text-align: center;
 }
 
-.section h1{
-    color: #D8D8D8;
-    font-size: 80px;
-    font-weight:bold;
+.section span{
+color: #FF3D00;
 }
 
 .content {
@@ -57,9 +58,50 @@ color: #FF3D00;
     border: 2px solid #D8D8D8;
 }
 
+.icon {
+    width: 512px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 3em;
+}
+
+.text h1{
+    color: #D8D8D8;
+    font-size: 80px;
+    font-weight:bold;
+}
+
+.aboutMe{
+    color: #D8D8D8;
+    flex-direction: column;
+    justify-self: center;
+    margin-right: 100px;
+}
+
+.aboutMe h1 {
+    font-size: 40px;
+    font-weight: bold;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.aboutMe h2 {
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.aboutMe p {
+    width: 500px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #FF3D00;
 }
