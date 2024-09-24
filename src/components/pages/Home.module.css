@@ -50,7 +50,7 @@
 .especializacao {
     margin-top: 1em;
     color: #FF3D00;
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 
 .image {
@@ -74,7 +74,7 @@
 
 .text h1{
     color: #D8D8D8;
-    font-size: 80px;
+    font-size: 5vw;
     font-weight:bold;
 }
 
@@ -103,7 +103,24 @@
 }
 
 .title {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: bold;
     color: #FF3D00;
+}
+
+.projetos_Container {
+    flex-direction: column;
+    width: 90%;
+    height: 83vh;
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 0em;
+    justify-content: center;
+}
+
+.projetos_itens {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

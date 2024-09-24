@@ -1,0 +1,34 @@
+.projeto_imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    border-bottom: #D8D8D8;
+    border-bottom-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.projeto_texto {
+    padding-left: 1em;
+    padding-top: 0.2em;
+    color: #D8D8D8;
+}
+
+.projeto_texto h2 {
+    font-size: 3vh;
+}
+
+.projeto_texto p {
+    font-size: 2vh;
+}
+
+.projeto {
+    margin: 2vw;
+    border-style: solid;
+    border-color: #D8D8D8;
+    border-radius: 10px;
+    width: 20vw;
+    height: 30vh;
+}

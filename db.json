@@ -1,0 +1,10 @@
+{
+    "Projects": [
+        {"id": "1", "img": "Imagem", "titulo": "Cost", "desc": "Gerenciador de custo de projetos de desenvolvimento."},
+        {"id": "2", "img": "EM ESPERA!", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
+        {"id": "3", "img": "EM ESPERA!", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
+        {"id": "4", "img": "EM ESPERA!", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
+        {"id": "5", "img": "EM ESPERA!", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
+        {"id": "6", "img": "EM ESPERA!", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."}
+    ]
+}

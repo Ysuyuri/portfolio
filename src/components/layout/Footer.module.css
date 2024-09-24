@@ -35,6 +35,7 @@
 
 .link a {
     color:#303030;
+    transition: 0.5s;
 }
 
 .link a:hover {
