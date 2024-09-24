@@ -40,16 +40,6 @@ function Navbar() {
           </Scroll>
         </li>
         <li className={styles.item}>
-          <Scroll
-            to="aboutMe"
-            smooth={true}
-            duration={500}
-            className={styles.scroll}
-          >
-            Contato
-          </Scroll>
-        </li>
-        <li className={styles.item}>
           <Link to="https://github.com/Ysuyuri">{<FaGithub size={44} />}</Link>
         </li>
         <li className={styles.item}>

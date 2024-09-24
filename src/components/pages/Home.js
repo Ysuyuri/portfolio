@@ -29,7 +29,7 @@ function Home() {
           <img src={me} alt="Me" className={styles.image} />
         </div>
         <div className={styles.especializacao}>
-          <h1>PROGRAMADOR FULL STACK</h1>
+          <h1>PROGRAMADOR</h1>
         </div>
       </section>
       <section id="aboutMe" className={styles.content_color2}>
@@ -40,24 +40,11 @@ function Home() {
           <div className={styles.aboutMe}>
             <h1>RESUMO PROFISSIONAL</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book
+              Trabalhando na área de suporte, tive inúmeras experiências onde tive que resolver problema sobre pressão. Junto a isso, eu tive inúmeras experiências com desenvolvimento de projetos nos lugares onde trabalhei, onde trabalhei programando para Mobile me utilizando de tecnologias como React Native (programando em Typescript) ou projetos em Excel me utilizando do VBA.
             </p>
             <h1>FOCO PROFISSIONAL</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book
-            </p>
-            <h1>CONTATO</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book
+              Procuro me expecializar em linguagem WEB, onde no momento procuro aperfeiçoar minhas habilidades com Javascript, HTML e CSS. Junto a isso, estou desenvolvendo projetos para aperfeiçoar ainda mais meus conhecimentos sobre API's, Banco de Dados relacionais e não relacionais, além de estar focado em melhorar minhas habilidades com testes individuais. Em paralelo, estou também estudando inglês e buscando a fluência na língua.
             </p>
           </div>
           <img src={icon} alt="Icon" className={styles.icon} />
