@@ -7,12 +7,13 @@ import LinkButton from "../form/LinkButton"
 import ProjectCard from "../form/ProjectCard";
 import { useEffect, useState } from "react";
 
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 function Home() {
 
   const [loading, setLoading] = useState(true)
   const [projeto, setProjeto] = useState([])
+  const [aboutMe, setAboutMe] = useState(false)
 
   useEffect(() => {
     fetch("http://localhost:5000/Projects", {
@@ -41,6 +42,10 @@ function Home() {
         }}
       >
         <div className={styles.section}>
+          {aboutMe
+          ?
+          <h1>teste</h1>
+          :
           <motion.div className={styles.text} initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x:0}} transition={{duration: 1, delay: 0.5}} viewport={{once: true}}>
             <h1>
               <span>R</span>AFAE
@@ -51,8 +56,10 @@ function Home() {
               <span>A</span>
             </h1>
           </motion.div>
+          }
+          
           <motion.div initial={{opacity: 0, scale: 0.5}} animate={{opacity: 1, scale: 1}} whileHover={{scale: 1.1}} transition={{duration: 0.5, delay: 0.3, ease: [0, 0.71, 0.2, 1.01]}}>
-            <img src={me} alt="Me" className={styles.image} />
+            <img src={me} alt="Rafael" className={styles.image} onClick={() => setAboutMe(!aboutMe)}/>
           </motion.div>
         </div>
         <motion.div className={styles.especializacao} initial={{opacity: 0, y:-50}} animate={{opacity: 1, y: 0}} transition={{duration: 0.8, delay: 0.8}}>
@@ -85,15 +92,18 @@ function Home() {
           </div>
           <div className={styles.projetos_Container}>
             <div className={styles.projetos_itens}>
-              {projeto.map((projeto) => (
+              {!loading ?
+              projeto.map((projeto) => (
                 <ProjectCard 
                 img={projeto.img}
                 titulo={projeto.titulo}
                 desc={projeto.desc}
                 />
-              ))}
+              ))
+              :
+              <h1 style={color}>Loading...</h1>}
             </div>
-            <LinkButton text="Ver mais" to="./projetos"/>
+            {!loading && <LinkButton text="Ver mais" to="./projetos"/>}
           </div>
       </section>
     </div>
