@@ -6,5 +6,14 @@
         {"id": "4", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
         {"id": "5", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
         {"id": "6", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."}
+    ],
+    "Knowledge": [
+        {"id": 1, "img": "/projeto_img/01.png", "titulo": "Github"},
+        {"id": 2, "img": "/projeto_img/01.png", "titulo": "Javascript"},
+        {"id": 3, "img": "/projeto_img/01.png", "titulo": "React"},
+        {"id": 4, "img": "/projeto_img/01.png", "titulo": "Firebase"},
+        {"id": 5, "img": "/projeto_img/01.png", "titulo": "API"},
+        {"id": 6, "img": "/projeto_img/01.png", "titulo": "VBA"},
+        {"id": 7, "img": "/projeto_img/01.png", "titulo": "Testes Inidividuais"}
     ]
 }

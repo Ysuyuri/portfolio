@@ -2,64 +2,76 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .section {
     display: flex;
-    flex-direction: row;
-    padding-right: 2em;
-    text-align: right;
-}
-
-.section_2 {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+    flex-direction: column;
 }
 
 .section span{
-    color: #FF3D00;
+    color: #8939EF;
+}
+
+.section h1{
+    color: #D8D8D8;
+}
+
+.section p{
+    color: #D8D8D8;
+    font-size: 2vw;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 90vh;
     width: 100%;
-    background-color: #161616;
+    background-color: #080013;
     min-height: 100vh;
     overflow: hidden;
+    padding: 2%;
 }
 
-.content_color2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.content p{
+    color: #D8D8D8;
+    font-size: 2vw;
+    font-weight:normal;
+}
+
+.content span{
+    color: #8939EF;
+    font-weight: bold;
+}
+
+.conhecimentos_Container {
+    height: 80%;
     width: 100%;
-    background-color: #262626;
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-.especializacao {
-    margin-top: 1em;
-    color: #FF3D00;
-    font-size: 1.2vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .image {
     width: 17vw;
     height: auto;
     border-radius: 16px;
-    box-shadow: -4px 3px 8px #0c0c0c;
-    border: 2px solid #D8D8D8;
+    box-shadow: 0px 0px 5px #8939EF;
+    border: 2px solid #8939EF;
     cursor: pointer;
+}
+
+.imageContainer {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imageContainer h2 {
+    justify-content: center;
+    color: #D8D8D8;
 }
 
 .icon {
@@ -75,38 +87,43 @@
 
 .text h1{
     color: #D8D8D8;
-    font-size: 5vw;
-    font-weight:bold;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.text h2{
+    color: #D8D8D8
 }
 
 .aboutMe{
-    color: #D8D8D8;
+    display: flex;
     flex-direction: column;
-    justify-self: center;
-    margin-right: 100px;
+    align-items: center;
+    padding-right: 2%;
 }
 
 .aboutMe h1 {
-    font-size: 2rem;
+    font-size: 4vw;
     font-weight: bold;
     margin-top: 3vh;
 }
 
 .aboutMe h2 {
-    font-size: 21rem;
-    font-weight: normal;
+    font-size: 2.5vw;
+    font-weight: bold;
 }
 
 .aboutMe p {
-    width: 500px;
+    width: 600px;
     text-align: justify;
+    font-size: 1.3vw;
     margin-bottom: 50px;
 }
 
 .title {
     font-size: 4vw;
     font-weight: bold;
-    color: #FF3D00;
+    color: #D8D8D8;
 }
 
 .projetos_Container {
