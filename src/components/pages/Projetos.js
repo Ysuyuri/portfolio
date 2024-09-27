@@ -27,7 +27,7 @@ function Projetos() {
             <div className={styles.cabecalho}>
                 <motion.div className={styles.titulo} initial={{ x: -50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.1, duration: 0.5 }} viewport={{once: true}}>
                     <h1>PROJETOS</h1>
-                    <p>Para acessar os procejos, basta clicar em cima de qualquer um deles que você será redirecionado para a página do projeto escolhido.</p>
+                    <p>Para acessar os projetos, basta clicar em cima de qualquer um deles que você será redirecionado para a página do projeto escolhido.</p>
                 </motion.div>
                 {/* espaço para imagem que ficará ao lado do título */}
             </div>

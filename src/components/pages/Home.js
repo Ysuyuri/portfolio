@@ -224,7 +224,7 @@ function Home() {
               >
                 ver mais{" "}
               </span>
-              localizado no final dos projetos apresentados abaixo.
+              localizado no final dos projetos apresentados abaixo, ou caso queira acessar os projetos abaixo, basta clicar neles para ser redirecionado para sua página.
             </h2>
         </motion.div>
         <div className={styles.projetos_itens}>
