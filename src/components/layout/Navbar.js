@@ -21,12 +21,22 @@ function Navbar() {
         </li>
         <li className={styles.item}>
           <Scroll
-            to="aboutMe"
+            to="experience"
             smooth={true}
             duration={500}
             className={styles.scroll}
           >
-            Sobre mim
+            Experiências
+          </Scroll>
+        </li>
+        <li className={styles.item}>
+          <Scroll
+            to="know"
+            smooth={true}
+            duration={500}
+            className={styles.scroll}
+          >
+            Conhecimentos
           </Scroll>
         </li>
         <li className={styles.item}>

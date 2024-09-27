@@ -1,0 +1,20 @@
+.text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.list {
+  padding-top: 3%;
+  padding-left: 10%;
+}
+
+.container_Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}

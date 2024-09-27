@@ -1,19 +1,115 @@
 {
-    "Projects": [
-        {"id": "1", "img": "/projeto_img/01.png", "titulo": "Cost", "desc": "Gerenciador de custos de projeto de desenvolvimento."},
-        {"id": "2", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
-        {"id": "3", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
-        {"id": "4", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
-        {"id": "5", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."},
-        {"id": "6", "img": "/projeto_img/01.png", "titulo": "Futuro Projeto", "desc": "Projeto a ser desenvolvido."}
-    ],
-    "Knowledge": [
-        {"id": 1, "img": "/projeto_img/01.png", "titulo": "Github"},
-        {"id": 2, "img": "/projeto_img/01.png", "titulo": "Javascript"},
-        {"id": 3, "img": "/projeto_img/01.png", "titulo": "React"},
-        {"id": 4, "img": "/projeto_img/01.png", "titulo": "Firebase"},
-        {"id": 5, "img": "/projeto_img/01.png", "titulo": "API"},
-        {"id": 6, "img": "/projeto_img/01.png", "titulo": "VBA"},
-        {"id": 7, "img": "/projeto_img/01.png", "titulo": "Testes Inidividuais"}
-    ]
+  "Projects": [
+    {
+      "id": "1",
+      "img": "/projeto_img/01.png",
+      "titulo": "Cost",
+      "desc": "Gerenciador de custos de projeto de desenvolvimento."
+    },
+    {
+      "id": "2",
+      "img": "/projeto_img/01.png",
+      "titulo": "Futuro Projeto",
+      "desc": "Projeto a ser desenvolvido."
+    },
+    {
+      "id": "3",
+      "img": "/projeto_img/01.png",
+      "titulo": "Futuro Projeto",
+      "desc": "Projeto a ser desenvolvido."
+    },
+    {
+      "id": "4",
+      "img": "/projeto_img/01.png",
+      "titulo": "Futuro Projeto",
+      "desc": "Projeto a ser desenvolvido."
+    },
+    {
+      "id": "5",
+      "img": "/projeto_img/01.png",
+      "titulo": "Futuro Projeto",
+      "desc": "Projeto a ser desenvolvido."
+    },
+    {
+      "id": "6",
+      "img": "/projeto_img/01.png",
+      "titulo": "Futuro Projeto",
+      "desc": "Projeto a ser desenvolvido."
+    }
+  ],
+  "Knowledge": [
+    { "id": 1, "img": "/projeto_img/01.png", "titulo": "Github" },
+    { "id": 2, "img": "/projeto_img/01.png", "titulo": "Javascript" },
+    { "id": 3, "img": "/projeto_img/01.png", "titulo": "React" },
+    { "id": 4, "img": "/projeto_img/01.png", "titulo": "Firebase" },
+    { "id": 5, "img": "/projeto_img/01.png", "titulo": "API" },
+    { "id": 6, "img": "/projeto_img/01.png", "titulo": "VBA" },
+    { "id": 7, "img": "/projeto_img/01.png", "titulo": "Testes Inidividuais" }
+  ],
+  "Experience": [
+    {
+      "title": "Estagiário de Suporte",
+      "company_name": "Associação Educacional Dom Bosco",
+      "icon": "/projeto_img/company/aedb.png",
+      "iconBg": "#383E56",
+      "date": "Set 2019 - Set 2020",
+      "points": [
+        "Atender Chamados dentro da Instituição",
+        "Manutenção de Notebook, Desktop e afins",
+        "Manutenção na Infraestruturas de Rede na instituição"
+      ]
+    },
+    {
+      "title": "Estagiário de Suporte",
+      "company_name": "Carboox Resende Industria e Comércio de Refratários Ltda",
+      "icon": "/projeto_img/company/carboox.png",
+      "iconBg": "#383E56",
+      "date": "Set 2020 - Nov 2022",
+      "points": [
+        "Abertura e fechamento de chamados",
+        "Criação de pedidos de compra por meio de ERP",
+        "Manutenção na Infraestrutura de Redes na Empresa"
+      ]
+    },
+    {
+      "title": "Tecnico de Suporte",
+      "company_name": "Carboox Resende Industria e Comércio de Refratários Ltda",
+      "icon": "/projeto_img/company/carboox.png",
+      "iconBg": "#383E56",
+      "date": "Nov 2022 - Jan 2024",
+      "points": [
+        "Abertura e fechamento de chamados",
+        "Cotação e criação de ordem de compra por meio de ERP",
+        "Contatar fornecedor",
+        "Manutenção na infraestrutura de Redes da Empresa",
+        "Montagem de Dashboard's Power BI (Financeiro, produção, etc) integrado com Banco SQL",
+        "Manutenção de Notebooks e Celulares",
+        "Atendimento de chamado remoto",
+        "Criação de artes comemorativas",
+        "Edição de vídeos",
+        "Manutenção de Telefones IP",
+        "Manutenção de Câmeras IP",
+        "Configurar NVR para Câmeras IP",
+        "Experiência com React Native ",
+        "Desenvolvimento em Typescript e Javascript ",
+        "Criação de Usuário e permissões de acesso no AD."
+      ]
+    },
+    {
+      "title": "Analista de Suporte",
+      "company_name": "Kromberg & Schubert",
+      "icon": "/projeto_img/company/kroschu.png",
+      "iconBg": "#d8d8d8",
+      "date": "Jan 2024 - Hoje",
+      "points": [
+        "Gerenciar abertura e fechamento de chamados.",
+        "Desenvolver melhorias em processos administrativos.",
+        "Automatizar tarefas com programação (Python Batch script).",
+        "Executar tarefas básicas em cmd Linux.",
+        "Manter contato constante com a equipe de TI externa (Inglês)",
+        "Criar documentos de processo do setor",
+        "Criar aplicações em VBA"
+      ]
+    }
+  ]
 }
