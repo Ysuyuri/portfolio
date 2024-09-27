@@ -42,6 +42,10 @@
   padding: 2%;
 }
 
+.destaque {
+  color: #8939ef
+}
+
 .content p {
   color: #d8d8d8;
   font-size: 2vw;
@@ -59,15 +63,17 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .image {
   width: 22vw;
   height: 27vw;
   border-radius: 16px;
-  box-shadow: 0px 0px 5px #8939ef;
   border: 2px solid #8939ef;
   cursor: pointer;
+  box-shadow: 0 0 20px 10px rgba(255,255,255,0.09);
 }
 
 .imageContainer {
@@ -136,18 +142,17 @@
 }
 
 .projetos_Container {
+  display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 83vh;
-  background-color: #262626;
-  border-radius: 10px;
-  padding: 0em;
-  justify-content: center;
+  background-color: #080013;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 2%;
 }
 
 .projetos_itens {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }

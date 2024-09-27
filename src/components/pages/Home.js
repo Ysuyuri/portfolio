@@ -27,7 +27,7 @@ function Home() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setProjeto(data.sort((a, b) => a.id - b.id).slice(0, 6));
+        setProjeto(data.sort((a, b) => a.id - b.id).slice(0, 4));
       })
       .catch((err) => console.log(err));
 
@@ -175,23 +175,26 @@ function Home() {
         </motion.div>
       </section>
 
-      <section id="know" className={styles.content}>
+      <section id="know" className={styles.experience}>
         <motion.div
           className={styles.text}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.1 }}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
         >
           <h1>Conhecimentos.</h1>
-          <p>
-            Estabeleci um conhecimento concreto com varias tecnologias, onde
-            pude aplica-las em projetos, tais como{" "}
-            <span>
-              React Native, React, Typescript, Javascript, Firebase, SQL, VBA,{" "}
-            </span>
-            entre outras.
-          </p>
+          <h2>
+              Estabeleci um conhecimento concreto com varias tecnologias, onde
+              pude aplica-las em projetos, tais como{" "}
+              <span
+                onClick={() => setknow(!know)}
+                className={styles.destaque}
+              >
+                React Native, React, Typescript, Javascript, Firebase, SQL, VBA,{" "}
+              </span>
+              entre outras.
+            </h2>
         </motion.div>
         <div className={styles.conhecimentos_Container}>
           {!loading ? (
@@ -204,22 +207,27 @@ function Home() {
           <h1>hi</h1>
         </div>
       </section>
-      <section id="Project" className={styles.content}>
+      <section id="Project" className={styles.projetos_Container}>
         <motion.div
           className={styles.text}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.1 }}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
         >
           <h1>Meus Projetos.</h1>
-          <p>
-            Para acessar todos os projetos, clique em <span>ver mais.</span>{" "}
-            localizado no final dos projetos apresentados abaixo.
-          </p>
+          <h2>
+          Para acessar todos os projetos, clique em{" "}
+              <span
+                onClick={() => setknow(!know)}
+                className={styles.destaque}
+              >
+                ver mais{" "}
+              </span>
+              localizado no final dos projetos apresentados abaixo.
+            </h2>
         </motion.div>
-        <div className={styles.projetos_Container}>
-          <div className={styles.projetos_itens}>
+        <div className={styles.projetos_itens}>
             {!loading ? (
               projeto.map((projeto) => (
                 <ProjectCard
@@ -231,9 +239,8 @@ function Home() {
             ) : (
               <h1 style={color}>Loading...</h1>
             )}
-          </div>
-          {!loading && <LinkButton text="Ver mais" to="./projetos" />}
         </div>
+        {!loading && <LinkButton text="Ver mais" to="./projetos" />}
       </section>
     </div>
   );

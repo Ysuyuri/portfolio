@@ -38,13 +38,13 @@
     }
   ],
   "Knowledge": [
-    { "id": 1, "img": "/projeto_img/01.png", "titulo": "Github" },
-    { "id": 2, "img": "/projeto_img/01.png", "titulo": "Javascript" },
-    { "id": 3, "img": "/projeto_img/01.png", "titulo": "React" },
-    { "id": 4, "img": "/projeto_img/01.png", "titulo": "Firebase" },
-    { "id": 5, "img": "/projeto_img/01.png", "titulo": "API" },
-    { "id": 6, "img": "/projeto_img/01.png", "titulo": "VBA" },
-    { "id": 7, "img": "/projeto_img/01.png", "titulo": "Testes Inidividuais" }
+    { "id": 1, "img": "/projeto_img/tecnology/react.png", "titulo": "React" },
+    { "id": 2, "img": "/projeto_img/tecnology/nodejs.png", "titulo": "Node JS" },
+    { "id": 3, "img": "/projeto_img/tecnology/javascript.png", "titulo": "Javascript" },
+    { "id": 4, "img": "/projeto_img/tecnology/sql.png", "titulo": "SQL" },
+    { "id": 5, "img": "/projeto_img/tecnology/firebase.png", "titulo": "Firebase" },
+    { "id": 6, "img": "/projeto_img/tecnology/access.png", "titulo": "Access" },
+    { "id": 7, "img": "/projeto_img/tecnology/excel.png", "titulo": "VBA" }
   ],
   "Experience": [
     {
