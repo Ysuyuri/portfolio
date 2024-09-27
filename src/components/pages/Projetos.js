@@ -9,7 +9,7 @@ function Projetos() {
     const [project, setProject] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/Projects", {
+        fetch("https://portfolio-api-five-silk.vercel.app/Projects", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
