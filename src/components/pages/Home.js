@@ -19,7 +19,7 @@ function Home() {
   const [know, setknow] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/Projects", {
+    fetch("https://portfolio-api-five-silk.vercel.app/Projects", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ function Home() {
       })
       .catch((err) => console.log(err));
 
-    fetch("http://localhost:5000/Knowledge", {
+    fetch("https://portfolio-api-five-silk.vercel.app/Knowledge", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function Home() {
       })
       .catch((err) => console.log(err));
 
-    fetch("http://localhost:5000/Experience", {
+    fetch("https://portfolio-api-five-silk.vercel.app/Experience", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
