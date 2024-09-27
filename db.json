@@ -44,7 +44,8 @@
     { "id": 4, "img": "/projeto_img/tecnology/sql.png", "titulo": "SQL" },
     { "id": 5, "img": "/projeto_img/tecnology/firebase.png", "titulo": "Firebase" },
     { "id": 6, "img": "/projeto_img/tecnology/access.png", "titulo": "Access" },
-    { "id": 7, "img": "/projeto_img/tecnology/excel.png", "titulo": "VBA" }
+    { "id": 7, "img": "/projeto_img/tecnology/excel.png", "titulo": "VBA" },
+    { "id": 8, "img": "/projeto_img/tecnology/powerbi.png", "titulo": "Power BI" }
   ],
   "Experience": [
     {
