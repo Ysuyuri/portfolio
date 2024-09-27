@@ -2,7 +2,7 @@ import styles from "./ProjectCard.module.css"
 
 import { motion } from "framer-motion"
 
-function ProjectCard({ img, titulo, desc }) {
+function ProjectCard({ img, titulo, desc, codigo }) {
     return (
         <motion.div className={styles.projeto} initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} whileHover={{scale: 1.1}} transition={{duration: 0.2, delay: 0.2}} viewport={{once:true}}>
             <div className={styles.projeto_imagem} >
@@ -11,6 +11,7 @@ function ProjectCard({ img, titulo, desc }) {
             <div className={styles.projeto_texto}>
                 <h2>{titulo}</h2>
                 <p>{desc}</p>
+                <p>Acessar código: <a href={codigo}> {codigo}</a></p>
             </div>
         </motion.div>
     )

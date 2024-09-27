@@ -2,39 +2,31 @@
   "Projects": [
     {
       "id": "1",
-      "img": "/projeto_img/01.png",
+      "img": "/projeto_img/cost.png",
       "titulo": "Cost",
-      "desc": "Gerenciador de custos de projeto de desenvolvimento."
+      "desc": "Gerenciador de custos de projeto de desenvolvimento.",
+      "codigo": "https://github.com/Ysuyuri/costs"
     },
     {
       "id": "2",
-      "img": "/projeto_img/01.png",
-      "titulo": "Futuro Projeto",
-      "desc": "Projeto a ser desenvolvido."
+      "img": "/projeto_img/portfolio.png",
+      "titulo": "Portfolio",
+      "desc": "Apresentação profissional junto a demonstração de projetos.",
+      "codigo": "https://github.com/Ysuyuri/portfolio"
     },
     {
       "id": "3",
-      "img": "/projeto_img/01.png",
+      "img": "/projeto_img/Em construcao.png",
       "titulo": "Futuro Projeto",
-      "desc": "Projeto a ser desenvolvido."
+      "desc": "Projeto a ser desenvolvido.",
+      "codigo": "Projeto a ser desenvolvido."
     },
     {
       "id": "4",
-      "img": "/projeto_img/01.png",
+      "img": "/projeto_img/Em construcao.png",
       "titulo": "Futuro Projeto",
-      "desc": "Projeto a ser desenvolvido."
-    },
-    {
-      "id": "5",
-      "img": "/projeto_img/01.png",
-      "titulo": "Futuro Projeto",
-      "desc": "Projeto a ser desenvolvido."
-    },
-    {
-      "id": "6",
-      "img": "/projeto_img/01.png",
-      "titulo": "Futuro Projeto",
-      "desc": "Projeto a ser desenvolvido."
+      "desc": "Projeto a ser desenvolvido.",
+      "codigo": "Projeto a ser desenvolvido."
     }
   ],
   "Knowledge": [

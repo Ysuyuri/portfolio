@@ -234,6 +234,7 @@ function Home() {
                   img={projeto.img}
                   titulo={projeto.titulo}
                   desc={projeto.desc}
+                  codigo={projeto.codigo}
                 />
               ))
             ) : (
