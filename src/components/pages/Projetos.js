@@ -37,6 +37,7 @@ function Projetos() {
                     img={project.img}
                     titulo={project.titulo}
                     desc={project.desc}
+                    codigo={project.codigo}
                     />
                 ))}
             </div>
