@@ -31,13 +31,29 @@
   ],
   "Knowledge": [
     { "id": 1, "img": "/projeto_img/tecnology/react.png", "titulo": "React" },
-    { "id": 2, "img": "/projeto_img/tecnology/nodejs.png", "titulo": "Node JS" },
-    { "id": 3, "img": "/projeto_img/tecnology/javascript.png", "titulo": "Javascript" },
+    {
+      "id": 2,
+      "img": "/projeto_img/tecnology/nodejs.png",
+      "titulo": "Node JS"
+    },
+    {
+      "id": 3,
+      "img": "/projeto_img/tecnology/javascript.png",
+      "titulo": "Javascript"
+    },
     { "id": 4, "img": "/projeto_img/tecnology/sql.png", "titulo": "SQL" },
-    { "id": 5, "img": "/projeto_img/tecnology/firebase.png", "titulo": "Firebase" },
+    {
+      "id": 5,
+      "img": "/projeto_img/tecnology/firebase.png",
+      "titulo": "Firebase"
+    },
     { "id": 6, "img": "/projeto_img/tecnology/access.png", "titulo": "Access" },
     { "id": 7, "img": "/projeto_img/tecnology/excel.png", "titulo": "VBA" },
-    { "id": 8, "img": "/projeto_img/tecnology/powerbi.png", "titulo": "Power BI" }
+    {
+      "id": 8,
+      "img": "/projeto_img/tecnology/powerbi.png",
+      "titulo": "Power BI"
+    }
   ],
   "Experience": [
     {

@@ -1,40 +1,40 @@
 .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70%;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  cursor: pointer;
 }
 
 .texto {
-    padding-top: 0.2em;
-    color: #D8D8D8;
-    display: flex;
+  padding-top: 0.2em;
+  color: #d8d8d8;
+  display: flex;
 }
 
 .texto h2 {
-    font-size: 3vh;
-    font-weight: bold;
+  font-size: 3vh;
+  font-weight: bold;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #D8D8D8;
-    border-radius: 10px;
-    width: 230px;
-    height: 300px;
-    margin: 3%;
-    background-color: #130e2d;
-    box-shadow: 0 0 20px 10px rgba(255,255,255,0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  border-radius: 10px;
+  width: 230px;
+  height: 300px;
+  margin: 3%;
+  background-color: #130e2d;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.09);
 }
 
 .img {
-    width: 40%;
-    height: auto;
-    border-radius: 10px;
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
 }

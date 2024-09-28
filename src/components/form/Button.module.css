@@ -1,22 +1,22 @@
 .form {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
-    background-color: #fff;
-    color: #222;
-    padding: 0.7em 1.2em;
-    text-decoration: none;
-    transition: 0.5s;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    height: auto;
-    font-size: 2vh;
-    font-weight: bold;
+  background-color: #fff;
+  color: #222;
+  padding: 0.7em 1.2em;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  height: auto;
+  font-size: 2vh;
+  font-weight: bold;
 }
 
 .btn:hover {
-    color: #8939EF;
+  color: #8939ef;
 }

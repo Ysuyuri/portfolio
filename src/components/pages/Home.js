@@ -185,16 +185,13 @@ function Home() {
         >
           <h1>Conhecimentos.</h1>
           <h2>
-              Estabeleci um conhecimento concreto com varias tecnologias, onde
-              pude aplica-las em projetos, tais como{" "}
-              <span
-                onClick={() => setknow(!know)}
-                className={styles.destaque}
-              >
-                React Native, React, Typescript, Javascript, Firebase, SQL, VBA,{" "}
-              </span>
-              entre outras.
-            </h2>
+            Estabeleci um conhecimento concreto com varias tecnologias, onde
+            pude aplica-las em projetos, tais como{" "}
+            <span onClick={() => setknow(!know)} className={styles.destaque}>
+              React Native, React, Typescript, Javascript, Firebase, SQL, VBA,{" "}
+            </span>
+            entre outras.
+          </h2>
         </motion.div>
         <div className={styles.conhecimentos_Container}>
           {!loading ? (
@@ -204,7 +201,6 @@ function Home() {
           ) : (
             <h1>Loading</h1>
           )}
-          <h1>hi</h1>
         </div>
       </section>
       <section id="Project" className={styles.projetos_Container}>
@@ -217,30 +213,29 @@ function Home() {
         >
           <h1>Meus Projetos.</h1>
           <h2>
-          Para acessar todos os projetos, clique em{" "}
-              <span
-                onClick={() => setknow(!know)}
-                className={styles.destaque}
-              >
-                ver mais{" "}
-              </span>
-              localizado no final dos projetos apresentados abaixo, ou caso queira acessar os projetos abaixo, basta clicar neles para ser redirecionado para sua página.
-            </h2>
+            Para acessar todos os projetos, clique em{" "}
+            <span onClick={() => setknow(!know)} className={styles.destaque}>
+              ver mais{" "}
+            </span>
+            localizado no final dos projetos apresentados abaixo, ou caso queira
+            acessar os projetos abaixo, basta clicar neles para ser
+            redirecionado para sua página.
+          </h2>
         </motion.div>
         <div className={styles.projetos_itens}>
-            {!loading ? (
-              projeto.map((projeto) => (
-                <ProjectCard
-                  img={projeto.img}
-                  titulo={projeto.titulo}
-                  desc={projeto.desc}
-                  codigo={projeto.codigo}
-                  link={projeto.link}
-                />
-              ))
-            ) : (
-              <h1 style={color}>Loading...</h1>
-            )}
+          {!loading ? (
+            projeto.map((projeto) => (
+              <ProjectCard
+                img={projeto.img}
+                titulo={projeto.titulo}
+                desc={projeto.desc}
+                codigo={projeto.codigo}
+                link={projeto.link}
+              />
+            ))
+          ) : (
+            <h1 style={color}>Loading...</h1>
+          )}
         </div>
         {!loading && <LinkButton text="Ver mais" to="./projetos" />}
       </section>
