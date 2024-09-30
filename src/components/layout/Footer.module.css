@@ -1,43 +1,43 @@
-.footer{
-    background-color: #DADADA;
-    color: #303030;
-    padding: 3em;
-    text-align: center;
+.footer {
+  background-color: #dadada;
+  color: #303030;
+  padding: 3em;
+  text-align: center;
 }
 
 .social_list {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
 
 .social_list li {
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 .social_list li:hover {
-    color: #8939EF;
+  color: #8939ef;
 }
 
 .social_list svg {
-    font-size: 1.5em;
-    cursor: pointer;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
 .copy_right {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .copy_right span {
-    font-weight: bold;
-    color: #8939EF;
+  font-weight: bold;
+  color: #8939ef;
 }
 
 .link a {
-    color:#303030;
-    transition: 0.5s;
+  color: #303030;
+  transition: 0.5s;
 }
 
 .link a:hover {
-    color:#8939EF;
+  color: #8939ef;
 }
