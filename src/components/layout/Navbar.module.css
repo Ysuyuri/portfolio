@@ -51,15 +51,18 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        display: none;
+        visibility: hidden;
         background-color: #333;
         left: 0;
+        transform: translateY(-10%);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+        z-index: 1;
     }
 
     .item {
         width: 40%;
         margin-right: 0;
-        display: flex;
         justify-content: center;
     }
 
@@ -69,6 +72,10 @@
 
     .open {
         display: flex;
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+        transition: transform 0.5s ease, opacity 0.5s ease;
     }
 
     .toggle {

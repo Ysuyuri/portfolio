@@ -7,7 +7,7 @@ import ProjectCard from "../form/ProjectCard";
 import { useEffect, useState } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import KnowledgeCard from "../form/KnowledgeCard";
 import WorkCard from "../form/WorkCard";
 
@@ -79,7 +79,7 @@ function Home() {
             <h1>
               Olá, eu me chamo <span>Rafael Meira!</span>
             </h1>
-            <p>Sou desenvolvedor Web, com foco em Back e Front end.</p>
+            <p>Sou desenvolvedor Web, com foco em FullStack.</p>
             <h2>
               Para transitar entre informações pessoais e profissionais,{" "}
               <span
@@ -234,7 +234,7 @@ function Home() {
               />
             ))
           ) : (
-            <h1 style={color}>Loading...</h1>
+            <h1>Loading</h1>
           )}
         </div>
         {!loading && <LinkButton text="Ver mais" to="./projetos" />}
