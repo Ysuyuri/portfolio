@@ -37,3 +37,15 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media(max-width: 450px) {
+    .cabecalho h1 {
+        font-size: 40px;
+    }
+
+    .cabecalho p {
+        color: #D8D8D8;
+        font-size: 20px;
+        width: 90%;
+    }
+}
