@@ -79,7 +79,7 @@ function Home() {
             <h1>
               Olá, eu me chamo <span>Rafael Meira!</span>
             </h1>
-            <p>Sou desenvolvedor Web, com foco em FullStack.</p>
+            <p>Sou desenvolvedor Web, com foco em Backend e Frontend.</p>
             <h2>
               Para transitar entre informações pessoais e profissionais,{" "}
               <span
@@ -102,7 +102,8 @@ function Home() {
                 >
                   <h1>Sobre mim</h1>
                   <p>
-                    Sou desenvolvedor web com foco em React e Node.js, buscando
+                    Sou desenvolvedor web com foco em Javascript e Typescript,
+                    me utilizando de ferramentas como React e Node.js, buscando
                     sempre melhorar minhas habilidades e acompanhar as inovações
                     tecnológicas. No momento, estou avançando no inglês e
                     estudando cybersecurity para integrar mais segurança às
@@ -185,12 +186,13 @@ function Home() {
         >
           <h1>Conhecimentos.</h1>
           <h2>
-            Estabeleci um conhecimento concreto com varias tecnologias, onde
-            pude aplica-las em projetos, tais como{" "}
+            Estabeleci um conhecimento concreto com varias tecnologias, tais
+            como{" "}
             <span onClick={() => setknow(!know)} className={styles.destaque}>
               React Native, React, Typescript, Javascript, Firebase, SQL, VBA,{" "}
             </span>
-            entre outras.
+            entre outras, onde encontrei aplicabilidade para elas em projetos
+            para empresas onde trabalhei.
           </h2>
         </motion.div>
         <div className={styles.conhecimentos_Container}>
