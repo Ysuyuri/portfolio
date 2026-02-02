@@ -10,25 +10,31 @@ export default function TerminalMock() {
   const [showPrompt, setShowPrompt] = useState(false);
 
   useEffect(() => {
-    let index = 0;
+    setTyped("");
+    setShowOutput(false);
+    setShowPrompt(false);
 
     const typing = setInterval(() => {
-      if (index >= commandText.length) {
-        clearInterval(typing);
-
-        setTimeout(() => {
-          setShowOutput(true);
-          setTimeout(() => setShowPrompt(true), 400);
-        }, 500);
-
-        return;
-      }
-
-      setTyped((prev) => prev + commandText[index]);
-      index++;
+      setTyped((prev) => {
+        if (prev.length >= commandText.length) {
+          clearInterval(typing);
+          return prev;
+        }
+        
+        const nextChar = commandText[prev.length];
+        return prev + nextChar;
+      });
     }, 120);
 
-    return () => clearInterval(typing);
+    const finalTimeout = setTimeout(() => {
+      setShowOutput(true);
+      setTimeout(() => setShowPrompt(true), 400);
+    }, (commandText.length * 120) + 500);
+
+    return () => {
+      clearInterval(typing);
+      clearTimeout(finalTimeout);
+    };
   }, []);
 
 
