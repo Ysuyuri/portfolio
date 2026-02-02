@@ -1,5 +1,4 @@
 import styles from "./Home.module.css";
-import me from "../../img/me.png";
 import background from "../../img/background.png";
 
 import LinkButton from "../form/LinkButton";

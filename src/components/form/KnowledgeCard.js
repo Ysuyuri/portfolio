@@ -1,5 +1,5 @@
 import styles from "./KnowledgeCard.module.css";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function KnowledgeCard({ img, titulo }) {
   return (

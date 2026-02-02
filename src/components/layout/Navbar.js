@@ -1,4 +1,3 @@
-import Container from "./Container";
 import { FaListUl, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 
 import styles from "./Navbar.module.css";
