@@ -10,13 +10,13 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import KnowledgeCard from "../form/KnowledgeCard";
 import WorkCard from "../form/WorkCard";
+import Terminal from "../form/Terminal";
 
 function Home() {
   const [loading, setLoading] = useState(true);
   const [projeto, setProjeto] = useState([]);
   const [knowledge, setKnowledge] = useState([]);
   const [experiences, setExperiences] = useState([]);
-  const [know, setknow] = useState(false);
 
   useEffect(() => {
     fetch("https://portfolio-api-five-silk.vercel.app/Projects", {
@@ -79,20 +79,17 @@ function Home() {
             <h1>
               Olá, eu me chamo <span>Rafael Meira!</span>
             </h1>
-            <p>Sou desenvolvedor Web, com foco em Backend e Frontend.</p>
-            <h2>
-              Para transitar entre informações pessoais e profissionais,{" "}
-              <span
-                onClick={() => setknow(!know)}
-                style={{ cursor: "pointer" }}
-              >
-                clique aqui.
-              </span>
-            </h2>
+            <p>Sou estudante de Cybersecurity, com foco em <span>Redteam</span> e <span>Blueteam</span>.</p>
           </motion.div>
           <div className={styles.imageContainer}>
-            {!know && (
-              <>
+            <motion.div
+              animate={{
+              x: [100, 10], opacity: 1, scale: 1 
+              }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            > 
+              <Terminal />
+            </motion.div>
                 <motion.div
                   className={styles.know}
                   initial={{ opacity: 0, x: -100, scale: 1 }}
@@ -102,57 +99,15 @@ function Home() {
                 >
                   <h1>Sobre mim</h1>
                   <p>
-                    Sou desenvolvedor web com foco em Javascript e Typescript,
-                    me utilizando de ferramentas como React e Node.js, buscando
-                    sempre melhorar minhas habilidades e acompanhar as inovações
-                    tecnológicas. No momento, estou avançando no inglês e
-                    estudando cybersecurity para integrar mais segurança às
-                    minhas soluções.
+                    Profissional de Cybersecurity com foco em segurança ofensiva e defensiva, 
+                    atuando na identificação, exploração e mitigação de vulnerabilidades em ambientes reais. 
+                    Possuo experiência prática com análise de tráfego de rede, port scanning, 
+                    testes de intrusão, exploração de serviços, shells remotas e análise de logs para 
+                    detecção e resposta a incidentes. Atualmente estou buscando aprofundar meus conhecimentos
+                    em arquitetura de sistemas, redes e práticas de defesa, com objetivo de fortalecer a postura de segurança
+                    de ambientes corporativos.
                   </p>
                 </motion.div>
-              </>
-            )}
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={
-                know
-                  ? { x: [-100, -10], opacity: 1, scale: 1 }
-                  : { x: [100, 10], opacity: 1, scale: 1 }
-              }
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 1, ease: "easeInOut" }}
-              src={me}
-              alt="Rafael"
-              className={styles.image}
-              onClick={() => setknow(!know)}
-            />
-            {know && (
-              <>
-                <motion.div
-                  className={styles.know}
-                  initial={{ opacity: 0, x: -100, scale: 1 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  <h1>Resumo Profissional</h1>
-                  <p>
-                    Sou um desenvolvedor web dedicado, com sólida formação em
-                    suporte de TI, programação e automação de processos. Com uma
-                    graduação em Sistemas de Informação e experiência prática em
-                    desenvolvimento web utilizando JavaScript, TypeScript e
-                    React Native, tenho como foco criar soluções eficientes,
-                    escaláveis e intuitivas. Possuo um profundo conhecimento em
-                    tecnologias de backend, como SQL Server e Firebase, além de
-                    expertise na automação de processos com VBA e Python. Também
-                    tenho experiência na construção de dashboards com Power BI e
-                    na integração de soluções orientadas a dados. Minha
-                    experiência abrange ainda a manutenção de redes,
-                    administração de sistemas e desenvolvimento mobile.
-                  </p>
-                </motion.div>
-              </>
-            )}
           </div>
         </div>
       </section>
@@ -186,13 +141,14 @@ function Home() {
         >
           <h1>Conhecimentos.</h1>
           <h2>
-            Estabeleci um conhecimento concreto com varias tecnologias, tais
-            como{" "}
-            <span onClick={() => setknow(!know)} className={styles.destaque}>
-              React Native, React, Typescript, Javascript, Firebase, SQL, VBA,{" "}
+            Estabeleci um conhecimento concreto de {" "}
+            <span className={styles.destaque}>
+              Protocolo TCP/IP, UDP, FTP, SSH, Analise de Log com Wireshark, terminal Linux, Python, Parâmetros
+              WEB (GET, POST, etc), SQLi, XSS, LFI, RFI, Buffer Overflow, {" "}
             </span>
-            entre outras, onde encontrei aplicabilidade para elas em projetos
-            para empresas onde trabalhei.
+            entre outros conhecimentos que são necessários para minha base de conhecimento. 
+            Além disso, tenho conhecimento prático com laboratórios reais feitos pela empresa DESEC, 
+            além de experiência com CTF's.
           </h2>
         </motion.div>
         <div className={styles.conhecimentos_Container}>
@@ -216,7 +172,7 @@ function Home() {
           <h1>Meus Projetos.</h1>
           <h2>
             Para acessar todos os projetos, clique em{" "}
-            <span onClick={() => setknow(!know)} className={styles.destaque}>
+            <span className={styles.destaque}>
               ver mais{" "}
             </span>
             localizado no final dos projetos apresentados abaixo, ou caso queira

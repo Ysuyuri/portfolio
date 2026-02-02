@@ -30,27 +30,45 @@
     }
   ],
   "Knowledge": [
-    { "id": 1, "img": "/projeto_img/tecnology/react.png", "titulo": "React" },
+    {
+      "id": 1,
+      "img": "/projeto_img/tecnology/nmap.png",
+      "titulo": "NMAP"
+    },
     {
       "id": 2,
-      "img": "/projeto_img/tecnology/nodejs.png",
-      "titulo": "Node JS"
+      "img": "/projeto_img/tecnology/wireshark.png",
+      "titulo": "Wireshark"
     },
     {
       "id": 3,
+      "img": "/projeto_img/tecnology/linux.png",
+      "titulo": "Terminal Linux"
+    },
+    {
+      "id": 4,
+      "img": "/projeto_img/tecnology/python.png",
+      "titulo": "Python"
+    },
+    {
+      "id": 5,
       "img": "/projeto_img/tecnology/javascript.png",
       "titulo": "Javascript"
     },
-    { "id": 4, "img": "/projeto_img/tecnology/sql.png", "titulo": "SQL" },
-    {
-      "id": 5,
-      "img": "/projeto_img/tecnology/firebase.png",
-      "titulo": "Firebase"
+    { "id": 6, 
+      "img": "/projeto_img/tecnology/sql.png", 
+      "titulo": "SQL" 
     },
-    { "id": 6, "img": "/projeto_img/tecnology/access.png", "titulo": "Access" },
-    { "id": 7, "img": "/projeto_img/tecnology/excel.png", "titulo": "VBA" },
+    { "id": 7, 
+      "img": "/projeto_img/tecnology/access.png", 
+      "titulo": "Access" 
+    },
+    { "id": 8, 
+      "img": "/projeto_img/tecnology/excel.png", 
+      "titulo": "VBA" 
+    },
     {
-      "id": 8,
+      "id": 9,
       "img": "/projeto_img/tecnology/powerbi.png",
       "titulo": "Power BI"
     }
@@ -109,7 +127,7 @@
       "company_name": "Kromberg & Schubert",
       "icon": "/projeto_img/company/kroschu.png",
       "iconBg": "#d8d8d8",
-      "date": "Jan 2024 - Hoje",
+      "date": "Jan 2024 - Ago 2025",
       "points": [
         "Gerenciar abertura e fechamento de chamados.",
         "Desenvolver melhorias em processos administrativos.",
@@ -118,6 +136,18 @@
         "Manter contato constante com a equipe de TI externa (Inglês)",
         "Criar documentos de processo do setor",
         "Criar aplicações em VBA"
+      ]
+    },
+    {
+      "title": "Assistente de TI Pleno",
+      "company_name": "Oliveira & Rondelli Advogados Associados",
+      "icon": "/projeto_img/company/oer.png",
+      "iconBg": "#383E56",
+      "date": "Jan 2024 - Ago 2025",
+      "points": [
+        "Gerenciar abertura e fechamento de chamados.",
+        "Configurar e implementar ferramentas de chamado e inventário (GLPI).",
+        "Criar documentação de PSI."
       ]
     }
   ]

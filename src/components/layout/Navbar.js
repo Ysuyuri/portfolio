@@ -2,11 +2,12 @@ import Container from "./Container";
 import { FaListUl, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 
 import styles from "./Navbar.module.css";
-import me from "../../img/me.png";
+import me from "../../img/terminal.png";
 
 import { Link as Scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 function Navbar() {
 
@@ -41,7 +42,12 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Link to="/">
-        <img className={styles.logo} src={me} alt="Me" />
+        <motion.img 
+          src={me}
+          alt="Terminal"
+          className={styles.logo}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}/>
       </Link>
       <ul className={`${styles.list} ${toggleOpen ? styles.open : ''}`}>
         <li className={styles.item}>
