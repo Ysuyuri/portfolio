@@ -1,6 +1,6 @@
 .terminalWindow {
-  width: 760px;
-  height: 420px;
+  width: 50vw;
+  height: 30vw;
   background: #2d0922;
   border-radius: 8px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
@@ -9,7 +9,7 @@
 }
 
 .terminalHeader {
-  height: 36px;
+  height: 4vw;
   background: #2c2c2c;
   display: flex;
   align-items: center;
@@ -75,4 +75,25 @@
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
+}
+
+@media(max-width: 450px) {
+.terminalWindow {
+  width: 75vw;
+  height: 50vw;
+  background: #2d0922;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.terminalHeader {
+  height: 6vw;
+  background: #2c2c2c;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+}
 }
