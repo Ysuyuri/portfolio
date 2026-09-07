@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Projetos.module.css";
 import ProjectCard from "../form/ProjectCard";
 import db from "../../data/db.json"
@@ -6,7 +6,7 @@ import db from "../../data/db.json"
 import { motion } from "framer-motion";
 
 function Projetos() {
-  const [project, setProject] = useState(db.Projects);
+  const [project] = useState(db.Projects);
 
   return (
     <div className={styles.container}>

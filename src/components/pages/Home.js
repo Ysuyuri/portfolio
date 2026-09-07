@@ -14,9 +14,9 @@ import Terminal from "../form/Terminal";
 import db from "../../data/db.json"
 
 function Home() {
-  const [projeto, setProjeto] = useState(db.Projects);
-  const [knowledge, setKnowledge] = useState(db.Knowledge);
-  const [experiences, setExperiences] = useState(db.Experience);
+  const [projeto] = useState(db.Projects);
+  const [knowledge] = useState(db.Knowledge);
+  const [experiences] = useState(db.Experience);
 
   return (
     <div className={styles.home_container}>
