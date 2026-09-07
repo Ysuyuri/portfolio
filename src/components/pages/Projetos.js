@@ -1,25 +1,12 @@
 import { useEffect, useState } from "react";
 import styles from "./Projetos.module.css";
 import ProjectCard from "../form/ProjectCard";
+import db from "../../data/db.json"
 
 import { motion } from "framer-motion";
 
 function Projetos() {
-  const [project, setProject] = useState([]);
-
-  useEffect(() => {
-    fetch("https://portfolio-api-five-silk.vercel.app/Projects", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setProject(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  const [project, setProject] = useState(db.Projects);
 
   return (
     <div className={styles.container}>

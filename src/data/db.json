@@ -119,7 +119,7 @@
         "Configurar NVR para Câmeras IP",
         "Experiência com React Native ",
         "Desenvolvimento em Typescript e Javascript ",
-        "Criação de Usuário e permissões de acesso no AD."
+        "Criação de Usuário e permissões de acesso no AD"
       ]
     },
     {
@@ -143,11 +143,29 @@
       "company_name": "Oliveira & Rondelli Advogados Associados",
       "icon": "/projeto_img/company/oer.png",
       "iconBg": "#383E56",
-      "date": "Jan 2024 - Ago 2025",
+      "date": "Jan 2026 - Fev 2026",
       "points": [
-        "Gerenciar abertura e fechamento de chamados.",
-        "Configurar e implementar ferramentas de chamado e inventário (GLPI).",
-        "Criar documentação de PSI."
+        "Gerenciar abertura e fechamento de chamados",
+        "Configurar e implementar ferramentas de chamado e inventário (GLPI)",
+        "Criar documentação de PSI"
+      ]
+    },
+    {
+      "title": "Analista de TI Pleno",
+      "company_name": "Sodecia Automotive Minas Gerais, LTDA",
+      "icon": "/projeto_img/company/sodecia.png",
+      "iconBg": "#383E56",
+      "date": "Mar 2026 - Atual",
+      "points": [
+        "Atuação em suporte e infraestrutura de TI em ambiente industrial",
+        "Participação no processo de implantação e estruturação do ambiente tecnológico da unidade",
+        "Administração de endpoints utilizando NinjaOne, realizando gerenciamento de atualizações, monitoramento e manutenção de estações Windows.",
+        "Administração de usuários e grupos no Active Directory, incluindo provisionamento de acessos e permissões.",
+        "Administração de usuários, perfis e permissões no ERP Datasul (TOTVS), além de suporte técnico aos usuários da plataforma.",
+        "Provisionamento de notebooks e desktops corporativos, incluindo ingresso no domínio, instalação de softwares corporativos, soluções de segurança (Trend Micro) e configuração do ambiente para utilização do ERP.",
+        "Administração do ambiente de impressão corporativo, realizando gerenciamento de filas, cotas de impressão e troubleshooting em servidor de impressão.",
+        "Participação em reuniões de acompanhamento da infraestrutura, reportando indicadores operacionais, evolução de projetos, conectividade e ações de conscientização em segurança da informação.",
+        "Participação no controle dos treinamentos obrigatórios de conscientização em segurança da informação (KnowBe4) e acompanhamento de indicadores de conformidade."
       ]
     }
   ]

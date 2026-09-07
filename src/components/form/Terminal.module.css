@@ -9,7 +9,7 @@
 }
 
 .terminalHeader {
-  height: 4vw;
+  height: 50px;
   background: #2c2c2c;
   display: flex;
   align-items: center;

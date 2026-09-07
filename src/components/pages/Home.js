@@ -3,7 +3,7 @@ import background from "../../img/background.png";
 
 import LinkButton from "../form/LinkButton";
 import ProjectCard from "../form/ProjectCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
 import { motion } from "framer-motion";
@@ -11,50 +11,12 @@ import KnowledgeCard from "../form/KnowledgeCard";
 import WorkCard from "../form/WorkCard";
 import Terminal from "../form/Terminal";
 
+import db from "../../data/db.json"
+
 function Home() {
-  const [loading, setLoading] = useState(true);
-  const [projeto, setProjeto] = useState([]);
-  const [knowledge, setKnowledge] = useState([]);
-  const [experiences, setExperiences] = useState([]);
-
-  useEffect(() => {
-    fetch("https://portfolio-api-five-silk.vercel.app/Projects", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setProjeto(data.sort((a, b) => a.id - b.id).slice(0, 4));
-      })
-      .catch((err) => console.log(err));
-
-    fetch("https://portfolio-api-five-silk.vercel.app/Knowledge", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setKnowledge(data);
-      })
-      .catch((err) => console.log(err));
-
-    fetch("https://portfolio-api-five-silk.vercel.app/Experience", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setLoading(false);
-        setExperiences(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  const [projeto, setProjeto] = useState(db.Projects);
+  const [knowledge, setKnowledge] = useState(db.Knowledge);
+  const [experiences, setExperiences] = useState(db.Experience);
 
   return (
     <div className={styles.home_container}>
@@ -151,13 +113,9 @@ function Home() {
           </h2>
         </motion.div>
         <div className={styles.conhecimentos_Container}>
-          {!loading ? (
-            knowledge.map((knowledge) => (
+          {knowledge.map((knowledge) => (
               <KnowledgeCard img={knowledge.img} titulo={knowledge.titulo} />
-            ))
-          ) : (
-            <h1>Loading</h1>
-          )}
+            ))}
         </div>
       </section>
       <section id="Project" className={styles.projetos_Container}>
@@ -180,8 +138,7 @@ function Home() {
           </h2>
         </motion.div>
         <div className={styles.projetos_itens}>
-          {!loading ? (
-            projeto.map((projeto) => (
+          {projeto.map((projeto) => (
               <ProjectCard
                 img={projeto.img}
                 titulo={projeto.titulo}
@@ -190,11 +147,9 @@ function Home() {
                 link={projeto.link}
               />
             ))
-          ) : (
-            <h1>Loading</h1>
-          )}
+          }
         </div>
-        {!loading && <LinkButton text="Ver mais" to="./projetos" />}
+          <LinkButton text="Ver mais" to="./projetos" />
       </section>
     </div>
   );
